@@ -1,12 +1,20 @@
+import javax.swing.*;
+import java.awt.*;
 import java.util.Scanner;
 
 class cube {
-    public static void test(){
 
-    }
+public static int a = 500;
+public static int b = 500;
+
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int a = sc.nextInt();
+        JFrame frame = new JFrame();
+        Canvas canvas = new Canvas();
+        frame.add(canvas);
+        canvas.setSize(a, b);
+        frame.pack();
+        frame.setVisible(true);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
 
 }
