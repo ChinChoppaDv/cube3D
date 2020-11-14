@@ -20,7 +20,8 @@ class cube extends Canvas {
             graphics.clearRect(0, 0, b, a);
 
             graphics.setColor(Color.black);
-            graphics.drawString("чё блять как это работает?", 5, 15);
+            graphics.drawLine(0, b/2, a, b/2);
+            graphics.drawLine(b/2, 0, b/2, a);
 
             bufferStrategy.show();
             graphics.dispose();
@@ -36,6 +37,8 @@ class cube extends Canvas {
 //        canvas.print(graphics);
         frame.pack();
         frame.setVisible(true);
+        frame.setResizable(false);
+        frame.setLocationRelativeTo(null);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         canvas.createBufferStrategy(3);
