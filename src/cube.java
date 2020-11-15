@@ -3,46 +3,70 @@ import java.awt.*;
 import java.awt.image.BufferStrategy;
 
 
-class cube extends Canvas {
+public class cube extends Canvas implements Runnable {
 
-    public static JFrame frame = new JFrame("cube");
+/*    public static JFrame frame = new JFrame("cube");*/
     public static Canvas canvas = new Canvas();
     public static int a = 500;
     public static int b = 500;
-    public static boolean running = true;
+    private boolean running = false;
     public static BufferStrategy bufferStrategy;
     public static Graphics graphics;
+    public static int rectW = 70;
+    public static double t = 0.0;
 
-    private static void draw () {
+    private JFrame frame;
+    private Thread thread;
+
+    public cube () {
+        Dimension size = new Dimension(a, b);
+        frame = new JFrame("cube");
+
+    }
+
+    public synchronized void start() {
+        running = true;
+        thread = new Thread(this, "КУБ");
+        thread.start();
+    }
+
+    public synchronized void stop() {
+        running = false;
+        try {
+            thread.join();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
+
+
+    public void run () {
         while (running) {
+            t += 0.1;
             bufferStrategy = canvas.getBufferStrategy();
             graphics = bufferStrategy.getDrawGraphics();
             graphics.clearRect(0, 0, b, a);
-
             graphics.setColor(Color.black);
-            graphics.drawLine(0, b/2, a, b/2);
-            graphics.drawLine(b/2, 0, b/2, a);
-
+            graphics.drawRect((int) (Math.sin(t) * 100), 140, rectW, rectW);
             bufferStrategy.show();
             graphics.dispose();
         }
     }
 
     public static void main(String[] args) {
-        frame.add(canvas);
+        cube cube3d = new cube();
+        cube3d.frame.add(cube3d);
+        cube3d.frame.add(canvas);
         canvas.setSize(a, b);
-//        canvas.setBackground(color);
-//        Graphics graphics = frame.getGraphics();
-//        graphics.drawLine(3, 3, 8, 8);
-//        canvas.print(graphics);
-        frame.pack();
-        frame.setVisible(true);
-        frame.setResizable(false);
-        frame.setLocationRelativeTo(null);
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        cube3d.frame.pack();
+        cube3d.frame.setVisible(true);
+        cube3d.frame.setResizable(false);
+        cube3d.frame.setLocationRelativeTo(null);
+        cube3d.frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         canvas.createBufferStrategy(3);
-        draw();
+        cube3d.start();
+
     }
 
 }
