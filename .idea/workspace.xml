@@ -1,7 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="6ef8e6a3-b91f-4ac1-b678-477ff0a3d024" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Screen.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/cube/cube.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/cube/cube.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cube.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cube.java" afterDir="false" />
@@ -10,6 +29,13 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -23,6 +49,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="full.screen.before.presentation.mode" value="false" />
   </component>
   <component name="RunManager">
     <configuration name="cube" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -63,6 +90,8 @@
       <workItem from="1605476899995" duration="9412000" />
       <workItem from="1605623385094" duration="1136000" />
       <workItem from="1605734934171" duration="3105000" />
+      <workItem from="1606259249176" duration="2654000" />
+      <workItem from="1606497931249" duration="2418000" />
     </task>
     <servers />
   </component>
@@ -70,6 +99,15 @@
     <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
@@ -81,22 +119,22 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="671" y="254" key="#com.intellij.refactoring.move.moveMembers.MoveMembersDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1605393063073" />
-    <state width="1877" height="352" key="GridCell.Tab.0.bottom" timestamp="1605740305264">
+    <state width="1877" height="285" key="GridCell.Tab.0.bottom" timestamp="1606504791810">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1605740305264" />
-    <state width="1877" height="352" key="GridCell.Tab.0.center" timestamp="1605740305263">
+    <state width="1877" height="285" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1606504791810" />
+    <state width="1877" height="285" key="GridCell.Tab.0.center" timestamp="1606504791810">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1605740305263" />
-    <state width="1877" height="352" key="GridCell.Tab.0.left" timestamp="1605740305263">
+    <state width="1877" height="285" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1606504791810" />
+    <state width="1877" height="285" key="GridCell.Tab.0.left" timestamp="1606504791810">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1605740305263" />
-    <state width="1877" height="352" key="GridCell.Tab.0.right" timestamp="1605740305264">
+    <state width="1877" height="285" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1606504791810" />
+    <state width="1877" height="285" key="GridCell.Tab.0.right" timestamp="1606504791810">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1605740305264" />
+    <state width="1877" height="285" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1606504791810" />
     <state width="1877" height="352" key="GridCell.Tab.1.bottom" timestamp="1605740305264">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -113,6 +151,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="1877" height="352" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1605740305264" />
+    <state width="720" height="1048" key="com.intellij.byteCodeViewer.ShowByteCodeAction" timestamp="1606261856164">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="720" height="1048" key="com.intellij.byteCodeViewer.ShowByteCodeAction/0.0.1920.1050@0.0.1920.1050" timestamp="1606261856163" />
     <state x="667" y="124" width="585" height="801" key="find.popup" timestamp="1605358529153">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
